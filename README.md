@@ -1,16 +1,94 @@
-# React + Vite
+# AdminShop — Panel Administrativo de E-Commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dashboard administrativo desarrollado en React para gestionar el catálogo de productos de una tienda en línea, con control de inventario, stock y precios.
 
-Currently, two official plugins are available:
+## 🚀 Demo en producción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+## 🛠️ Stack tecnológico
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Tecnología | Uso |
+|---|---|
+| React 18 + Vite | Framework y bundler |
+| react-router-dom v6 | Enrutamiento SPA |
+| Tailwind CSS v3 | Estilos |
+| SweetAlert2 | Alertas y confirmaciones |
+| Axios | Peticiones HTTP |
+| JSON Server | API REST simulada |
+| LocalStorage | Persistencia de sesión |
 
-## Expanding the ESLint configuration
+## 📁 Estructura del proyecto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+├── components/
+│   ├── Modal.jsx
+│   ├── Navbar.jsx
+│   ├── ProductCard.jsx
+│   ├── ProductForm.jsx
+│   ├── ProtectedRoute.jsx
+│   ├── SearchBar.jsx
+│   ├── Spinner.jsx
+│   └── StatsBar.jsx
+├── hooks/
+│   └── useProductos.js
+├── layouts/
+│   └── DashboardLayout.jsx
+├── pages/
+│   ├── LoginPage.jsx
+│   └── ProductosPage.jsx
+├── services/
+│   └── productosService.js
+└── utils/
+    ├── auth.js
+    └── helpers.js
+```
+
+## ⚙️ Instalación local
+
+### 1. Clonar e instalar
+```bash
+https://github.com/tho070412/Ecommerce.git
+cd ecommerce-admin
+npm install
+```
+
+### 2. Instalar JSON Server
+```bash
+npm install -g json-server
+```
+
+
+```
+
+### 4. Correr la app (Terminal 2)
+```bash
+npm run dev
+```
+
+## ✨ Funcionalidades
+
+- 🔐 Login con usuario + PIN (LocalStorage)
+- 🛡️ Rutas protegidas
+- 📦 Grid de productos con imágenes
+- ➕ Crear producto con validación (precio y stock ≥ 0)
+- ✏️ Editar cualquier campo del producto
+- 🗑️ Eliminar con confirmación SweetAlert2 + alerta de éxito
+- 📊 Estadísticas: total, sin stock, stock bajo, valor del inventario
+- 🔍 Buscador por nombre + filtro por categoría
+- 📈 Barra visual de stock por producto
+- ⏳ Spinner durante peticiones HTTP
+- 📱 Diseño responsivo (2 col móvil, 4 col escritorio)
+
+## 🌿 GitFlow
+
+```
+main → develop → feature/auth-system
+                → feature/product-card
+                → feature/api-integration
+                → feature/search-filter
+```
+
+## 👤 Autor
+
+Thomas Rodriguez Londoño
