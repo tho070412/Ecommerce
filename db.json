@@ -1,0 +1,37 @@
+{
+  "productos": [
+    {
+      "nombre": "Camiseta Nike Dri-FIT",
+      "precio": 89000,
+      "categoria": "Ropa",
+      "stock": 24,
+      "imagen": "https://www.replays.com.co/cdn/shop/files/Camiseta_Local_Alemania_26_Blanco_KD8363_01_laydown.jpg?v=1762446673",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "nombre": "Audífonos Sony WH-1000XM5",
+      "precio": 1250000,
+      "categoria": "Electrónica",
+      "stock": 5,
+      "imagen": "https://eoatecnologia.com/cdn/shop/files/1652389214_IMG_1754415.jpg?v=1689970956"
+    },
+    {
+      "nombre": "Silla Ergonómica Pro",
+      "precio": 650000,
+      "categoria": "Hogar",
+      "stock": 7,
+      "imagen": "https://inprocl.com/_next/image?url=https%3A%2F%2Facdn-us.mitiendanube.com%2Fstores%2F002%2F668%2F882%2Fproducts%2Fsilla-19-62fdcde17f03ea5b4217304809473595-1024-1024.jpg&w=3840&q=75&dpl=dpl_AoVc7vwW12eGeQB8aEvDSEfehct2",
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "nombre": "Tenis Adidas Ultraboost",
+      "precio": 420000,
+      "categoria": "Deportes",
+      "stock": 12,
+      "imagen": "https://www.sportline.com.co/media/catalog/product/h/q/hq6353-1-footwear-photography-side_lateral_center_view-transparent.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:&format=jpeg"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
