@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-// JSON Server corriendo en puerto 3004
-const BASE_URL = 'http://localhost:3004/productos'
+
+const BASE_URL = 'https://ecommerce-api-7o63.onrender.com/productos'
 
 const api = axios.create({
   baseURL: BASE_URL,
