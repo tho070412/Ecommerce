@@ -3,7 +3,7 @@
 Dashboard administrativo desarrollado en React para gestionar el catálogo de productos de una tienda en línea, con control de inventario, stock y precios.
 
 ## 🚀 Demo en producción
-
+https://ecommerce-two-phi-87.vercel.app/
 
 ## 🛠️ Stack tecnológico
 
